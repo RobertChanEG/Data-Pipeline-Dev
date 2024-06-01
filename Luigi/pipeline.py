@@ -10,7 +10,7 @@ def print_configurations():
     print("Core Configuration:")
     print("Scheduler Host:", config.get('core', 'scheduler_host'))
     print("Scheduler Port:", config.get('core', 'scheduler_port'))
-    print("Default Target Directory:", config.get('core', 'target-directory'))
+    print("Default Target Directory:", config.get('core', 'default-target-directory'))
     print("Logging Configuration:")
     print("Log File:", config.get('logging', 'log-file'))
     print("Log Level:", config.get('logging', 'log-level'))
