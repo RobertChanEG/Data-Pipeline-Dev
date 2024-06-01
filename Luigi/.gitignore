@@ -1,0 +1,14 @@
+# Ignore all JSON files
+*.json
+
+# Ignore all Parquet files
+*.parquet
+
+# Ignore __pycache__ directory
+tasks/__pycache__/
+
+# Ignore logs directory (assuming you don't want to track logs in git)
+logs/
+
+# Ignore data directory (if you want to exclude all data files)
+data/
