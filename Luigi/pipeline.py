@@ -1,5 +1,6 @@
 import luigi
 from tasks.transform_tasks import FlattenAndSaveParquet
+from tasks.long_running_task import LongRunningTask
 import logging
 
 # Debugging: Check if the configuration is loaded
@@ -26,4 +27,6 @@ if __name__ == '__main__':
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-    luigi.run(['FlattenAndSaveParquet'])
+    luigi.run(['LongRunningTask'])
+
+
