@@ -8,8 +8,9 @@ from luigi.configuration import get_config
 def print_configurations():
     config = get_config()
     print("Core Configuration:")
-    print("Default Scheduler Host:", config.get('core', 'default-scheduler-host'))
-    print("Default Target Directory:", config.get('core', 'default-target-directory'))
+    print("Scheduler Host:", config.get('core', 'scheduler_host'))
+    print("Scheduler Port:", config.get('core', 'scheduler_port'))
+    print("Default Target Directory:", config.get('core', 'target-directory'))
     print("Logging Configuration:")
     print("Log File:", config.get('logging', 'log-file'))
     print("Log Level:", config.get('logging', 'log-level'))
@@ -25,4 +26,4 @@ if __name__ == '__main__':
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-    luigi.run(['FlattenAndSaveParquet', '--local-scheduler'])
+    luigi.run(['FlattenAndSaveParquet'])
