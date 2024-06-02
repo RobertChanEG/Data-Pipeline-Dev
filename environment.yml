@@ -1,0 +1,25 @@
+name: python_package_template
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11.9
+  - pandas
+  - requests
+  - luigi
+  - pyarrow
+  - orjson
+  - numpy           # Useful for numerical operations
+  - matplotlib      # Plotting library
+  - scikit-learn    # Machine learning library
+  - jupyter         # Interactive notebooks
+  - scipy           # Scientific computing
+  - seaborn         # Statistical data visualization
+  - ipython         # Interactive computing
+  - statsmodels     # Statistical modeling
+  - sqlalchemy      # SQL toolkit and Object Relational Mapper
+  - openpyxl        # Excel file reading and writing
+  - tqdm            # Progress bar for loops
+  - pip:
+    - some-pypi-package
