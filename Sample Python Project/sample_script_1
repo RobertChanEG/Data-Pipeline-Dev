@@ -1,0 +1,13 @@
+# create some sample code that returns the last weeks days in a list
+
+import datetime
+
+def last_week():
+    today = datetime.date.today()
+    last_week = today - datetime.timedelta(days=7)
+    days = []
+    for i in range(7):
+        days.append(last_week + datetime.timedelta(days=i))
+    return days
+
+print(last_week())

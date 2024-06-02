@@ -1,0 +1,14 @@
+# create a sample script that returns some random data in an array
+
+import random
+import pandas as pd
+
+def get_data():
+    return [random.randint(0, 100) for _ in range(10)]
+
+# create a sample script that returns some random data in a pandas dataframe
+
+def get_data_df():
+    return pd.DataFrame({f'key_{i}': [random.randint(0, 100) for _ in range(10)] for i in range(10)})
+
+get_data_df()
