@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     # Configure logging
     logging.basicConfig(
-        filename='C:/Users/Rob/Downloads/Data Pipeline Dev/Luigi/logs/luigi.log',
+        filename='C:/Users/robert.chan/Downloads/Data-Pipeline-Dev/Luigi/logs/luigi.log',
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )

@@ -4,12 +4,14 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.11.9
+  - pip
+  - python=3.11
   - pandas
   - requests
   - luigi
   - pyarrow
   - orjson
+  - dagster
   - numpy           # Useful for numerical operations
   - matplotlib      # Plotting library
   - scikit-learn    # Machine learning library
