@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../BI Code/Rob Chan/EVO BOS"
 		}
 	],
 	"settings": {}

@@ -12,3 +12,6 @@ logs/
 
 # Ignore data directory (if you want to exclude all data files)
 data/
+
+# pyc files
+*.pyc
